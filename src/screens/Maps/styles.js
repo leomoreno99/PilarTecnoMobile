@@ -15,22 +15,16 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         width: '100%',
       },
-      rowContent: {
-        flexDirection: 'row',
+      content: {
         justifyContent: 'center',
         alignItems: 'center',
-      },
-      buttonContent: {
-        width: width/3,
-        height: width/3,
-        margin: 10,
-        borderRadius: 5,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,0.3)',
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgba(0,0,0,0.2)',
       },
       title: {
         color: '#fff',
-        fontWeight: '900'
+        fontWeight: '900',
+        fontSize: 50
       }
 })

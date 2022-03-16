@@ -5,7 +5,7 @@ import {
     View, 
     Text
 } from 'react-native';
-import { AppStack } from '../routes/AppStack';
+import AppStack from '../routes/AppStack';
 
 export default App = () => {
 

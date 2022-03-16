@@ -1,13 +1,13 @@
 import React, { Component, useCallback } from "react";
 import { createStackNavigator } from '@react-navigation/stack';
-import Tabs from './Tabs'
+import Profile from '../screens/Profile';
 
 const Stack = createStackNavigator();
 
-export default AppStack = () => {
+export default ProfileStackNavigator = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Main" component={Tabs} />
+      <Stack.Screen name="Profile" component={Profile} />
     </Stack.Navigator>
   );
 }

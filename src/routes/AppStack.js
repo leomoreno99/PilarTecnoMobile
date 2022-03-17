@@ -6,8 +6,8 @@ const Stack = createStackNavigator();
 
 export default AppStack = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Main" component={Tabs} />
+    <Stack.Navigator headerMode="false" >
+      <Stack.Screen  name="Main" component={Tabs} />
     </Stack.Navigator>
   );
 }

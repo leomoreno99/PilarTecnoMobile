@@ -1,9 +1,9 @@
 import React, { Component, useCallback } from "react";
-import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../screens/Home';
-import List from '../screens/List';
-import Maps from '../screens/Maps';
-import Profile from '../screens/Profile';
+import { createStackNavigator } from "@react-navigation/stack";
+import Home from "../screens/Home";
+import List from "../screens/List";
+import Maps from "../screens/Maps";
+import Profile from "../screens/Profile";
 
 const HomeStack = createStackNavigator();
 
@@ -16,4 +16,4 @@ export default HomeStackNavigator = () => {
       <HomeStack.Screen name="Profile" component={Profile} />
     </HomeStack.Navigator>
   );
-}
+};

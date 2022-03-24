@@ -8,28 +8,24 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#1c1c1c'
       },
-      content: {
+      mainContent: {
+        flex: 1,
+        justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
-        height: '100%',
-        backgroundColor: '#1F2024',
-        paddingTop: 80
+      },
+      content: {
+        flexDirection: 'column',
+        // justifyContent: 'center',
+        // alignItems: 'center',
+        width: '100%',
+        // height: '100%',
+        // backgroundColor: 'rgba(0,0,0,0.2)',
       },
       title: {
-        color: '#fff',
+        color: 'black',
         fontWeight: '900',
-        fontSize: 30,
-        paddingTop: 20
-      },
-      subtitle: {
-        color: '#787481',
-        fontWeight: '500',
-        fontSize: 12,
-        paddingTop: 5
-      },
-      buttonContainer: {
-        marginTop: 50
+        fontSize: 50
       }
 })

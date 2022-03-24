@@ -6,12 +6,17 @@ import {
     Text
 } from 'react-native';
 import AppStack from '../routes/AppStack';
+import { Provider } from 'react-redux'
+import { store } from '../store';
 
 export default App = () => {
 
     return(
-        <NavigationContainer>
-            <AppStack />
-        </NavigationContainer>
+        <Provider store={store} >
+            <NavigationContainer>
+                <AppStack />
+            </NavigationContainer>
+        </Provider>
+        
     )
 }

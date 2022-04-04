@@ -1,18 +1,21 @@
 import React from "react";
-import { SafeAreaView, View, Text, ImageBackground } from "react-native";
+import { SafeAreaView, View, Text, ImageBackground, ScrollView, Dimensions } from "react-native";
+import { Header } from "react-native-elements";
 import { styles } from "./styles";
+
+const width = Dimensions.get('window').width;
 
 export default ListItem = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground
-        style={styles.mainContent}
-        source={require("../../assets/patterns/fondo.jpg")}
-      >
+      
         <View style={styles.content}>
-          <Text style={styles.title}>LIST ITEM</Text>
+          {/* <Header /> */}
+          <ScrollView contentContainerStyle={{flex: 1, width}} >
+            <View style={{flex: 1, backgroundColor: 'red'}} ></View>
+            <View style={{flex: 2, backgroundColor: 'blue'}} ></View>
+          </ScrollView>
         </View>
-      </ImageBackground>
     </SafeAreaView>
   );
 };

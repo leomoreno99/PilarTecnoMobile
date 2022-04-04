@@ -9,12 +9,6 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
       },
-      mainContent: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-      },
       content: {
         justifyContent: 'center',
         alignItems: 'center',
@@ -23,7 +17,7 @@ export const styles = StyleSheet.create({
         backgroundColor: 'rgba(0,0,0,0.2)',
       },
       title: {
-        color: '#fff',
+        color: 'black',
         fontWeight: '900',
         fontSize: 50
       }

@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Tabs from "./Tabs";
 import Maps from "../screens/Maps";
 import List from "../screens/List";
+import ListItem from "../screens/ListItem";
 import Profile from "../screens/Profile";
 import SignIn from "../screens/Auth/SignIn";
 import { useSelector } from "react-redux";
@@ -22,6 +23,7 @@ export default AppStack = () => {
       )}
       <Stack.Screen name="Map" component={Maps} />
       <Stack.Screen name="List" component={List} />
+      <Stack.Screen name="ListItem" component={ListItem} />
       <Stack.Screen name="Profile" component={Profile} />
     </Stack.Navigator>
   );

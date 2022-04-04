@@ -14,11 +14,11 @@ console.log(user)
 const { email, name } = user
 
   const signOut = async () => {
-    // try {
-    //   await AsyncStorage.delItem("user", JSON.stringify(false));
-    // } catch (e) {
-    //   // saving error
-    // }
+    try {
+      await AsyncStorage.delItem("user", JSON.stringify(false));
+    } catch (e) {
+      // saving error
+    }
     dispatch(actions.user.setUser(
       {
         user: false,

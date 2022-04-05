@@ -16,7 +16,7 @@ export default Tabs = () => {
   return (
     <Tab.Navigator 
       initialRouteName="Home"
-      activeColor="#02e3e4"
+      activeColor="#FAC820"
       inactiveColor="#787481"
       labeled={false}
       barStyle={{ 

@@ -8,6 +8,7 @@ import { actions } from '../../../store/actions'
 import auth from "@react-native-firebase/auth";
 import { GoogleSignin, GoogleSigninButton, statusCodes } from "@react-native-google-signin/google-signin";
 
+
 export default SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,7 +44,7 @@ export default SignIn = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text>Ingresa a Pilar Tecno</Text>
+        <Text style={styles.title} >Ingresa a Pilar Tecno</Text>
         <Input
           placeholder="Correo electrónico"
           leftIcon={{ type: "font-awesome", name: "user" }}
@@ -61,7 +62,7 @@ export default SignIn = () => {
         containerStyle={{ width: "90%" }}
         onPress={() => signIn()}
       />
-      <Button
+      {/* <Button
         title="Ingresar con Google"
         containerStyle={{ width: "90%", marginTop: 10 }}
         onPress={()=> onGoogleButtonPress().then(async(data)=>{
@@ -82,7 +83,7 @@ export default SignIn = () => {
           }
         })
       }
-      />
+      /> */}
     </SafeAreaView>
   );
 };

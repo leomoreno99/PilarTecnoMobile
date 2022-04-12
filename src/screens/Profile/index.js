@@ -10,8 +10,9 @@ import ButtonComponent from "../../components/ButtonComponent";
 export default Profile = () => {
   const dispatch = useDispatch();
   const user = useSelector(state => state.user);
-console.log(user)
-const { email, name } = user
+  let { email, name } = user
+  
+  email == ''? email = 'user@mail.com': email = email;
 
   const signOut = async () => {
     try {

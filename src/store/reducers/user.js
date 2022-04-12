@@ -2,8 +2,8 @@ import { LOG_IN } from "../constants";
 
 const initialState = {
   user: false,
-  email: null,
-  name: 'Leonel Moreno'
+  name: 'Leonel Moreno',
+  email: 'user@mail.com',
 };
 
 export default (state = initialState, {type, data}) => {
